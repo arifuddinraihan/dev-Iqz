@@ -1,11 +1,14 @@
 import './App.css';
-import Navbar from './Components/Navbar.js/Navbar';
+import Footer from './Components/Footer/Footer';
+import HeroSection from './Components/HomePage.js/HeroSection';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <h1>This is my first Quiz Website</h1>
+      <HeroSection></HeroSection>
+      <Footer></Footer>
     </div>
   );
 }

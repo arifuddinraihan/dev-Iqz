@@ -17,7 +17,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-center">
-                <a className="btn btn-ghost normal-case text-xl">Dev Iqz</a>
+                <Link to={'/home'} className="btn btn-ghost normal-case text-xl">Dev Iqz</Link>
             </div>
             <div className="navbar-end">
                 <div className="dropdown dropdown-end">

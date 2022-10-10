@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useRouteError } from 'react-router-dom';
 
 const ErrorPage = () => {
+    const error = useRouteError()
     return (
         <section className='flex items-center h-screen p-16 bg-slate-700 text-slate-300'>
             <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
@@ -36,6 +37,9 @@ const ErrorPage = () => {
                     </h2>
                     <p className='text-2xl font-semibold md:text-3xl mb-8'>
                         Sorry, we couldn't find this page.
+                    </p>
+                    <p className='text-2xl font-semibold md:text-3xl mb-8'>
+                        <i>{error.statusText || error.message}</i>
                     </p>
                     <Link
                         to='/'

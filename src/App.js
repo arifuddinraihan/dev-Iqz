@@ -1,14 +1,12 @@
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import Footer from './Components/Footer/Footer';
-import HeroSection from './Components/HomePage.js/HeroSection';
-import Navbar from './Components/Navbar/Navbar';
+import { router } from './Layout/Routes';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <HeroSection></HeroSection>
-      <Footer></Footer>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }

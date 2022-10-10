@@ -1,8 +1,10 @@
 import { Player } from '@lottiefiles/react-lottie-player';
-import React from 'react';
+import React, { useContext } from 'react';
+import { QuizContext } from '../../Layout/Root';
 import Cards from './Cards';
 
 const HeroSection = () => {
+    const quizTopic = useContext(QuizContext)
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -18,8 +20,13 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <Cards></Cards>
+            <div className='container mx-auto text-center my-14'>
+                <h1 className='text-4xl my-8'>Select Your Quiz Topic</h1>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+                    {
+                        quizTopic.map(topic => <Cards key={topic.id} topic={topic}></Cards>)
+                    }
+                </div>
             </div>
         </div>
     );

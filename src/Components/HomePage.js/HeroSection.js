@@ -2,6 +2,9 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import React, { useContext } from 'react';
 import { QuizContext } from '../../Layout/Root';
 import Cards from './Cards';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
     const quizTopic = useContext(QuizContext)
@@ -14,9 +17,19 @@ const HeroSection = () => {
                         autoplay
                         className='player'></Player>
                     <div>
-                        <h1 className="text-5xl font-bold">Are you ready!</h1>
-                        <p className="py-6 text-lg md:text-xl lg:text-2xl">Take a look at your <code className='badge text-2xl p-3'>Website Development</code> knowledge, and take these Quizzes!</p>
-                            <button className="btn btn-primary">Get Started</button>
+                        <div className='grid grid-cols-1'>
+                            <div className='grid grid-cols-1'>
+                                <h1 className="text-5xl font-bold">Are you ready!</h1>
+                                <p className="py-6 text-lg md:text-xl lg:text-2xl">Take a look at your <code className='badge text-2xl p-3'>Website Development</code> knowledge, and take these Quizzes!</p>
+                            </div>
+                            <div className='flex flex-col-reverse md:flex-row gap-2 justify-center'>
+                                <Link to={'/blog'} className="btn shadow-lg bg-cyan-200 text-gray-900 hover:bg-slate-200 hover:text-black flex gap-4">
+                                    Blog
+                                    <FontAwesomeIcon icon={faArrowRightLong}></FontAwesomeIcon>
+                                </Link>
+                                <Link to={'/stat'} className="btn btn-ghost">See Stats ...</Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

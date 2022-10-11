@@ -4,23 +4,22 @@ import { toast } from 'react-toastify';
 
 const Questions = ({ question }) => {
     const { question: ques, options, correctAnswer } = question;
-    function optionBtnHandle() {
-        options.find(rightAnswer => {
-            if (rightAnswer !== correctAnswer) {
-                toast.success('Correct Answer!', {
-                    position: "top-center",
-                    autoClose: 500,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "dark",
-                });
-            } else {
-                console.log("false Answer");
-            }
-        });
+    const optionBtnHandle = (data) => {
+        if (data === correctAnswer) {
+            toast.success('Bravo! Correct Answer.', {
+                position: "top-center",
+                autoClose: 500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
+        }
+        else {
+
+        }
     }
 
     return (
@@ -33,7 +32,7 @@ const Questions = ({ question }) => {
                         options.map((option, index) =>
                             <li key={index}
                                 className='btn btn-secondary flex flex-nowrap my-4 md:my-0 text-slate-800'
-                                onClick={optionBtnHandle}>
+                                onClick={() => optionBtnHandle(option)}>
                                 <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
                                 <p className='flex-grow text-start ml-2'>
                                     {option}

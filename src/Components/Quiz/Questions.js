@@ -1,19 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons'; 
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { toast } from 'react-toastify';
 
 const Questions = ({ question }) => {
     const { question: ques, options, correctAnswer } = question;
+
+    const optionBtnHandle = () => {
+        options.find(rightAnswer => {
+            if (rightAnswer !== correctAnswer) {
+                toast.success('Correct Answer!', {
+                    position: "top-center",
+                    autoClose: 500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
+            } else {
+                console.log("false Answer")
+            }
+        })
+    }
+
     return (
         <div className="card card-side bg-base-100 shadow-xl">
             <div className="card-body">
                 <h2 className="card-title text-start">{ques}</h2>
                 <ul className="flex flex-col gap-2">
                     {
-                        options.map(option => <li className='btn btn-ghost flex flex-row flex-nowrap gap-4 p-3'>
+                        options.map(option => <li className='btn btn-ghost flex flex-row flex-nowrap gap-4 p-3' onClick={optionBtnHandle}>
                             <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
                             <p className='flex-grow text-start'>{option}</p>
-                            </li>)
+                        </li>)
                     }
                 </ul>
             </div>

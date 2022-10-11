@@ -17,7 +17,7 @@ const Quiz = () => {
                 </div>
                 </h1>
             <h3 className='text-xl font-bold md:text-xl lg:text-2xl mb-8 mx-8 md:mx-0 mt-6 md:mt-8'>Select the right answer of <span className='text-cyan-400'>{total}</span> questions</h3>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 bg-slate-500 p-10'>
+            <div className='grid grid-cols-1 gap-4 bg-slate-500 p-10'>
                 {
                     questions.map(question => <Questions key={question.id} question={question}></Questions>)
                 }

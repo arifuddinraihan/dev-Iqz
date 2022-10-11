@@ -7,7 +7,7 @@ const Questions = ({ question }) => {
     const optionBtnHandle = (data) => {
         if (data === correctAnswer) {
             toast.success('Bravo! Correct Answer.', {
-                position: "top-center",
+                position: "bottom-center",
                 autoClose: 500,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -18,15 +18,26 @@ const Questions = ({ question }) => {
             });
         }
         else {
-
+            toast.error(`Wrong Answer`, {
+                position: "top-center",
+                autoClose: 500,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
         }
     }
 
     return (
         <div className="card card-side bg-slate-300 shadow-xl">
             <div className="card-body">
-                <h2 className="card-title text-start text-black" dangerouslySetInnerHTML={{ __html: ques }}>
-                </h2>
+                <div className="card-title" >
+                    <h2 className="text-start text-black" dangerouslySetInnerHTML={{ __html: ques }}></h2>
+                    <FontAwesomeIcon></FontAwesomeIcon>
+                </div>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {
                         options.map((option, index) =>

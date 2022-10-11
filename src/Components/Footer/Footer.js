@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCodeMerge } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
     return (
         <footer className="footer items-center p-4 bg-slate-300 text-slate-700">
             <div className="items-center grid-flow-col">
-                <Link to={'/home'} className="btn btn-ghost normal-case text-xl">Dev Iqz</Link>
+                <Link to={'/home'} className="btn btn-ghost normal-case text-xl gap-1">Dev
+                    <FontAwesomeIcon icon={faCodeMerge}></FontAwesomeIcon>
+                    Iqz</Link>
                 <p>Copyright © 2022 - All right reserved</p>
             </div>
             <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

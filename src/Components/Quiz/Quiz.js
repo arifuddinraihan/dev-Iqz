@@ -12,7 +12,7 @@ const Quiz = () => {
             <h1 className='text-4xl font-bold md:text-2xl lg:text-4xl mx-8 md:mx-0 mt-8 md:mt-14 flex flex-col md:flex-row gap-4 justify-center'>
                 Quiz Topic
                 <div className='flex flex-row gap-4 justify-center items-center'>
-                    <FontAwesomeIcon icon={faArrowRightLong}></FontAwesomeIcon>
+                    <FontAwesomeIcon icon={faArrowRightLong} className='hidden md:block'></FontAwesomeIcon>
                     <span className='text-cyan-400'>{name}</span>
                 </div>
                 </h1>

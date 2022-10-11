@@ -18,7 +18,7 @@ const HeroSection = () => {
                         className='player'></Player>
                     <div>
                         <div className='grid grid-cols-1'>
-                            <div className='grid grid-cols-1'>
+                            <div className='grid grid-cols-1 text-start md:text-center'>
                                 <h1 className="text-5xl font-bold">Are you ready!</h1>
                                 <p className="py-6 text-lg md:text-xl lg:text-2xl">Take a look at your <code className='badge text-2xl p-3'>Website Development</code> knowledge, and take these Quizzes!</p>
                             </div>

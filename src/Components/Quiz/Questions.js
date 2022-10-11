@@ -31,9 +31,9 @@ const Questions = ({ question }) => {
                 <h2 className="card-title text-start">{ques}</h2>
                 <ul className="flex flex-col gap-2">
                     {
-                        options.map(option => <li className='btn btn-ghost flex flex-row flex-nowrap gap-4 p-3' onClick={optionBtnHandle}>
+                        options.map(option => <li className='btn btn-ghost flex flex-nowrap my-4 md:my-0' onClick={optionBtnHandle}>
                             <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
-                            <p className='flex-grow text-start'>{option}</p>
+                            <p className='flex-grow text-start ml-2'>{option}</p>
                         </li>)
                     }
                 </ul>

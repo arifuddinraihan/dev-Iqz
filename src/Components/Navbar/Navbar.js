@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCodeMerge} from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     return (
@@ -17,7 +19,9 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-center">
-                <Link to={'/home'} className="btn btn-ghost normal-case text-xl">Dev Iqz</Link>
+                <Link to={'/home'} className="btn btn-ghost normal-case text-xl gap-1">Dev 
+                    <FontAwesomeIcon icon={faCodeMerge}></FontAwesomeIcon>
+                Iqz</Link>
             </div>
             <div className="navbar-end">
                 <div className="dropdown dropdown-end">

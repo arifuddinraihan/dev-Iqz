@@ -6,7 +6,7 @@ import Questions from './Questions';
 
 const Quiz = () => {
     const quizQuestions = useLoaderData();
-    const { name, total, logo, questions } = quizQuestions.data;
+    const { name, total, questions } = quizQuestions.data;
     return (
         <div className='text-center min-h-screen'>
             <h1 className='text-4xl font-bold md:text-2xl lg:text-4xl mx-8 md:mx-0 mt-8 md:mt-14 flex flex-col md:flex-row gap-4 justify-center'>

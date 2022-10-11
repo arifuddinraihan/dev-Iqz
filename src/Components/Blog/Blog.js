@@ -9,7 +9,7 @@ const Blog = () => {
                 Read New
                 <div className='flex flex-row gap-4 justify-center items-center'>
                     <FontAwesomeIcon icon={faCodeCompare} className='hidden md:block'></FontAwesomeIcon>
-                    <span className='text-cyan-400'>Blogs!</span>
+                    <span className='text-cyan-200'>Blogs!</span>
                 </div>
             </h1>
             <div className='grid grid-cols-1 gap-4 bg-slate-500 p-10'>

@@ -24,14 +24,15 @@ const Questions = ({ question }) => {
     }
 
     return (
-        <div className="card card-side bg-base-100 shadow-xl">
+        <div className="card card-side bg-slate-300 shadow-xl">
             <div className="card-body">
-                <h2 className="card-title text-start">{ques}</h2>
+                <h2 className="card-title text-start text-black" dangerouslySetInnerHTML={{ __html: ques }}>
+                </h2>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {
                         options.map((option, index) =>
                             <li key={index}
-                                className='btn btn-ghost flex flex-nowrap my-4 md:my-0'
+                                className='btn btn-secondary flex flex-nowrap my-4 md:my-0 text-slate-800'
                                 onClick={optionBtnHandle}>
                                 <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
                                 <p className='flex-grow text-start ml-2'>

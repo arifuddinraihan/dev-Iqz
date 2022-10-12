@@ -4,12 +4,11 @@ import Footer from '../Components/Footer/Footer';
 import Navbar from '../Components/Navbar/Navbar';
 
 export const QuizContext = createContext()
-export const QuestionContext = createContext()
 
 const Root = () => {
     const fetchData = useLoaderData()
     const quizData = fetchData.data
-    // console.log(quizData);
+    // console.log(fetchData);
     return (
         <div>
             <QuizContext.Provider value={quizData}>

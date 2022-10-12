@@ -8,7 +8,6 @@ export const QuizContext = createContext()
 const Root = () => {
     const fetchData = useLoaderData()
     const quizData = fetchData.data
-    // console.log(fetchData);
     return (
         <div>
             <QuizContext.Provider value={quizData}>

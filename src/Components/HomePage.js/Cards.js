@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Cards = ({ topic }) => {
     const { id, logo, name, total } = topic;
-    const [quiz, setQuiz] = useState([])
-    const goToQuiz = (topic) => {
-        setQuiz(topic);
-    }
     return (
         <div className="card card-compact w-auto bg-base-100 shadow-xl">
             <figure><img src={logo} alt={name} /></figure>
@@ -15,7 +11,7 @@ const Cards = ({ topic }) => {
                 <div className="card-actions grid grid-cols-1 md:grid-cols-2 justify-self-center items-center">
                     <p className='text-lg md:text-sm'>Total quiz: {total}</p>
                     <Link to={`quiz/${id}`}>
-                        <button onClick={() => goToQuiz(topic)}
+                        <button
                             className="btn btn-secondary">Start Now</button>
                     </Link>
                 </div>

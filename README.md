@@ -1,10 +1,18 @@
 # Project Name : Dev-Iqz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was build with React JS, Tailwind CSS > DaisyUI with [Press here to see the website](https://as9-arifuddin-dev-iqz.netlify.app/).
 
-### Code Splitting
+### Project Over-view
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+These are the platforms to build this site 
+->> [React.JS](https://reactjs.org/) ,
+->> [Tailwind CSS](https://tailwindcss.com/docs/guides/create-react-app) ,
+->> [daisyUI](https://daisyui.com/docs/install/) ,
+->> [React Router](https://reactrouter.com/en/main) ,
+->> [LottiePlayer React Component](https://github.com/LottieFiles/lottie-react) ,
+->> [React Toastify](https://www.npmjs.com/package/react-toastify) ,
+->> [sweetalert2](https://sweetalert2.github.io/#themes) ,
+->> [Recharts](https://recharts.org/en-US/guide/installation)
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 

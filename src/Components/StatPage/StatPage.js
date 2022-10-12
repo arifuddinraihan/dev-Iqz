@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartColumn } from '@fortawesome/free-solid-svg-icons';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { QuizContext } from '../../Layout/Root';
 
 
 const StatPage = () => {
     const data = useContext(QuizContext)
-    const { name, total } = data;
 
     return (
         <ResponsiveContainer width="100%" height="100%">

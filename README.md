@@ -13,6 +13,7 @@ These are the platforms which has used to build this Web-site
 ->> [React Toastify](https://www.npmjs.com/package/react-toastify) ,
 ->> [sweetalert2](https://sweetalert2.github.io/#themes) ,
 ->> [Recharts](https://recharts.org/en-US/guide/installation)
+->> [Font Awesome](https://fontawesome.com/v5/docs/web/use-with/react)
 
 ### Why And How (Tour of this Web-site)?
 
@@ -34,4 +35,4 @@ These are the platforms which has used to build this Web-site
  
 **9. For showing `Dynamic link` and `pages` I have used `loader` & `useLoader` in components along with dynamic link format using `{params}` and `/:id`.**
  
-**10. And Context API has made it easier for me to pass the data down to the deepest child element, super duper helpful.**
+**10. And `Context API` has made it easier for me to pass the data down to the deepest child element, super duper helpful.**

@@ -6,13 +6,21 @@ This project was build with React JS, Tailwind CSS > DaisyUI [Press here to see 
 
 These are the platforms which has used to build this Web-site 
 ->> [React.JS](https://reactjs.org/) ,
+ 
 ->> [Tailwind CSS](https://tailwindcss.com/docs/guides/create-react-app) ,
+ 
 ->> [daisyUI](https://daisyui.com/docs/install/) ,
+ 
 ->> [React Router](https://reactrouter.com/en/main) ,
+ 
 ->> [LottiePlayer React Component](https://github.com/LottieFiles/lottie-react) ,
+ 
 ->> [React Toastify](https://www.npmjs.com/package/react-toastify) ,
+ 
 ->> [sweetalert2](https://sweetalert2.github.io/#themes) ,
+ 
 ->> [Recharts](https://recharts.org/en-US/guide/installation)
+ 
 ->> [Font Awesome](https://fontawesome.com/v5/docs/web/use-with/react)
 
 ### Why And How (Tour of this Web-site)?

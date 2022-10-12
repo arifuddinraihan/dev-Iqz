@@ -31,7 +31,7 @@ const Navbar = () => {
                         </div>
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-300 rounded-box w-52">
-                        <li><a href='/'>User</a></li>
+                        <li><Link to={'/'}>User</Link></li>
                     </ul>
                 </div>
             </div>

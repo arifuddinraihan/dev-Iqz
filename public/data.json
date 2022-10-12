@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Why should we use React Router?",
+        "image": "https://images.unsplash.com/photo-1534224039826-c7a0eda0e6b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "answer": "We will need to utilize Router in React JS to create a React application with navigation across multiple pages. React Router is a JavaScript framework that lets us handle client and server-side routing in React applications. It enables the creation of single-page web or mobile apps that allow navigating without refreshing the page. It also allows us to use browser history features while preserving the right application view."
+    },
+    {
+        "id": 2,
+        "name": "How dose Context API works?",
+        "image": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "answer": "Context is a built-in API introduced in ​​React 16.3. It makes it possible to pass data from parent to children nested deep down the component tree directly, instead of passing it down through a chain of props. It can be used to solve the same problems as Redux does, but it doesn’t provide a strict way of state manipulation to ensure predictable behavior. Despite its low-level nature, it might be the perfect solution in some cases."
+    },
+    {
+        "id": 3,
+        "name": "Usage of React useRef Hook?",
+        "image": "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "answer": "The useRef Hook lets us create mutable variables inside functional components. There are three main key points that you should keep in mind when using the useRef Hook: *1.* A ref created with useRef will be created only when the component has been mounted and preserved for the full lifecycle. *2.* Refs can be used for accessing DOM nodes or React elements, and for storing mutable variables (like with instance variables in class components). *3.* Updating a ref is a side effect so it should be done only inside a useEffect (or useLayoutEffect) or inside an event handler."
+    }
+]

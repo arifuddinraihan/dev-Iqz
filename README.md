@@ -44,3 +44,5 @@ These are the platforms which has used to build this Web-site
 **9. For showing `Dynamic link` and `pages` I have used `loader` & `useLoader` in components along with dynamic link format using `{params}` and `/:id`.**
  
 **10. And `Context API` has made it easier for me to pass the data down to the deepest child element, super duper helpful.**
+
+**10. Google Font `Source Code Pro` is applied as core website fonts. Thanks Google!**

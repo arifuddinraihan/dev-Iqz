@@ -11,7 +11,9 @@ export const router = createBrowserRouter([
         path: '/',
         element: <Root></Root>,
         errorElement: <ErrorPage></ErrorPage>,
-        loader: () => fetch(`https://openapi.programming-hero.com/api/quiz`),
+        loader: async () => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz`)
+        },
         children: [
             { path: '/', element: <HeroSection></HeroSection> },
             { path: '/home', element: <HeroSection></HeroSection> },
@@ -23,7 +25,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'quiz/:id',
-                loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
+                loader: async ({ params }) => {
+                    return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+                },
                 element: <Quiz></Quiz>
             }
         ]

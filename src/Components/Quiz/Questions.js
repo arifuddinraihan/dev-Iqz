@@ -1,9 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faEye } from '@fortawesome/free-solid-svg-icons';
-import { toast } from 'react-toastify';
 import Swal from 'sweetalert2';
 
-const Questions = ({ question }) => {
+const Questions = ({ question , optionBtnHandle }) => {
     const { question: ques, options, correctAnswer } = question;
     const showCorrectAns = () => {
         Swal.fire({
@@ -11,32 +10,6 @@ const Questions = ({ question }) => {
             text : correctAnswer,
             confirmButtonText: 'OK'
         })
-    }
-    const optionBtnHandle = (data) => {
-        if (data === correctAnswer) {
-            toast.success('Bravo! Correct Answer.', {
-                position: "bottom-center",
-                autoClose: 500,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark",
-            });
-        }
-        else {
-            toast.error(`Wrong Answer`, {
-                position: "top-center",
-                autoClose: 500,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-            });
-        }
     }
 
     return (
@@ -54,7 +27,7 @@ const Questions = ({ question }) => {
                         options.map((option, index) =>
                             <li key={index}
                                 className='btn btn-secondary flex flex-nowrap py-8 text-slate-800'
-                                onClick={() => optionBtnHandle(option)}>
+                                onClick={()=>optionBtnHandle(option)}>
                                 <FontAwesomeIcon 
                                 icon={faCircle}></FontAwesomeIcon>
                                 <p className='flex-grow text-start ml-2'>

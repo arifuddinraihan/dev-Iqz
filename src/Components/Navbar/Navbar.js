@@ -12,14 +12,14 @@ const Navbar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content md:content-none mt-3 p-2 shadow bg-slate-300 rounded-box w-52">
-                        <li><NavLink to={'/home'} className={({isActive})=> isActive ? 'bg-cyan-400 font-bold' : undefined}>Homepage</NavLink></li>
+                        <li><NavLink to={'/'} className={({isActive})=> isActive ? 'bg-cyan-400 font-bold' : undefined}>Homepage</NavLink></li>
                         <li><NavLink to={'/stat'} className={({isActive})=> isActive ? 'bg-cyan-400 font-bold' : undefined}>Stats</NavLink></li>
                         <li><NavLink to={'/blog'} className={({isActive})=> isActive ? 'bg-cyan-400 font-bold' : undefined}>Blog</NavLink></li>
                     </ul>
                 </div>
             </div>
             <div className="navbar-center">
-                <Link to={'/home'} className="btn btn-ghost normal-case text-xl gap-1">Dev 
+                <Link to={'/'} className="btn btn-ghost normal-case text-xl gap-1">Dev 
                     <FontAwesomeIcon icon={faCodeMerge}></FontAwesomeIcon>
                 Iqz</Link>
             </div>

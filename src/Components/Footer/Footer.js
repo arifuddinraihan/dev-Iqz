@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="footer grid grid-cols-1 md:grid-rows-1 p-4 justify-items-stretch bg-slate-300 text-slate-700">
             <div className="items-center grid grid-cols-1 md:grid-rows-1 text-start">
-                <Link to={'/home'} className="btn btn-ghost normal-case text-xl gap-1">
+                <Link to={'/'} className="btn btn-ghost normal-case text-xl gap-1">
                     Dev
                     <FontAwesomeIcon icon={faCodeMerge}></FontAwesomeIcon>
                     Iqz
